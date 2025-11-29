@@ -32,7 +32,7 @@ const addInfoInput = document.querySelector(
 const submitBtn = document.getElementById("submit");
 
 submitBtn.addEventListener("click", (e) => {
-  e.preventDefault(); // フォーム送信を止める。リロードを防ぐ
+  // e.preventDefault(); // フォーム送信を止める。リロードを防ぐ
   //   console.log(questionInput.value);
   //     console.log(choice_1_Input.value);
   //     console.log(choice_2_Input.value);

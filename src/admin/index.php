@@ -92,13 +92,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['arrayData'])) {
 }
 ?>
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
-    $delete_id = intval($_POST['delete_id']);
-    $stmt = $dbh->prepare("DELETE FROM questions WHERE id = ?");
-    $stmt->execute([$delete_id]);
-    echo "削除しました";
-    exit;
-}
+// if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
+//     $delete_id = intval($_POST['delete_id']);
+
+//     try {
+//         // トランザクション開始
+//         $dbh->beginTransaction();
+
+//         // choices テーブルの選択肢を削除
+//         $stmt = $dbh->prepare("DELETE FROM choices WHERE problem_id = ?");
+//         $stmt->execute([$delete_id]);
+
+//         // questions テーブルの問題を削除
+//         $stmt = $dbh->prepare("DELETE FROM questions WHERE id = ?");
+//         $stmt->execute([$delete_id]);
+
+//         // トランザクションコミット
+//         $dbh->commit();
+
+//         echo "削除しました";
+//     } catch (PDOException $e) {
+//         // エラーが発生した場合、ロールバックしてエラーメッセージを表示
+//         $dbh->rollBack();
+//         echo "エラーが発生しました: " . $e->getMessage();
+//     }
+// }
 ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>

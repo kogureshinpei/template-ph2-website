@@ -78,6 +78,7 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
   </div>
   <input type="submit" value="ログイン"> 
 </form>
+<p>bbb@gmail.com</br>ccc</p>
         </section>
     </main>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
