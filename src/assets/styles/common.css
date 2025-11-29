@@ -1045,6 +1045,23 @@ body {
     font-size: 18px;
   }
   .u-sp-visible {
-    display: none;
+    ;
   }
+
+/* ----------------------------------- */
+
+.p-quiz-next-btn {
+  background-color: #0071bc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 32px;
+  cursor: pointer;
+  margin-top: 16px;
+  display: inline-block;
+}
+.p-quiz-next-btn:hover {
+  background-color: #005fa3;
 }

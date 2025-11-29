@@ -53,7 +53,7 @@
    * @description クイズコンテナーの取得
    * @type {HTMLElement}
    */
-  const quizContainer = document.getElementById('js-quizContainer');
+  // const quizContainer = document.getElementById('js-quizContainer');
 
   /**
    * @description クイズ１つ１つのHTMLを生成するための関数
@@ -111,10 +111,9 @@
    * @type {string}
    * @description 生成したクイズのHTMLを #js-quizContainer に挿入
    */
-  quizContainer.innerHTML = ALL_QUIZ.map((quizItem, index) => {
+    const quizContainer = () => document.getElementById('js-quizContainer').innerHTML = quizArray.map((quizItem, index) => {
     return createQuizHtml(quizItem, index)
   }).join('')
-
   /**
    * @type {NodeListOf<Element>}
    * @description すべての問題を取得

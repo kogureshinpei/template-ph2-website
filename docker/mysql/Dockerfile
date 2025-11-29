@@ -1,4 +1,7 @@
 FROM mysql:8
+#mysql:8はDebianベースなので、Oracle Linux ベースに変更することで日本語対応を行う
+#また、PHPフレームワーク(Laravelなど)を使う場合、一定のバージョンがないと動作しないことがあるため、MySQLのバージョンを8に固定しています。
+# FROM oraclelinux:8-slim
 
 # Oracle Linux のためのパッケージマネージャーのインストール
 USER root

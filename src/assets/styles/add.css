@@ -1,0 +1,127 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008b8b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 70px;
+}
+.header_logo{
+    margin-left: 20px;
+}
+.header_button{
+    margin-right: 20px;
+}
+a:hover {
+  cursor: pointer;
+}
+/* ========================================== */
+/* ↑ヘッター　↓メニュー */
+/* ========================================== */
+.left_menu{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 70px);
+    background-color: #e6cca1;
+    border-right: 1px solid black;
+    color: blue;
+}
+/* ========================================== */
+/* ↑メニュー　↓メイン */
+/* ========================================== */
+.main_contents{
+    margin-left: 200px;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background-color: #f5e3c4;
+}
+.main_contents_2{
+    margin-left: 200px;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background-color: #f5e3c4;
+}
+h1{
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+h2{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.contents_header{
+    display: flex;
+    margin: 20px;
+    margin-top: -20px;
+    border-bottom: 2px solid black;
+}
+.contents_body{
+    margin: 20px;
+    margin-top: 0;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid #b3b3b3;
+}
+.id_number{
+    margin-left: 30px;
+}
+.question_text{
+    margin-left: 30px;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+.radio-option {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .radio-option input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .radio-option input[type="radio"]:checked + label {
+      font-weight: bold;
+      color: #007BFF;  /* 選択時に青くなる */
+    }
+
+    .radio-option label {
+      cursor: pointer;
+    }
+
+.space{
+    margin-top: 20px;
+}
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #008b8b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signin_form{
+    margin-top: 100px;
+}
